@@ -14,8 +14,8 @@ Tstc = 25+273;
 Ncells = 144/2;
 Ncellp = 2;
 
-Ns = 1;
-Np = 1;
+Ns = 2;
+Np = 2;
 
 I = [];
 V = [];
@@ -61,7 +61,7 @@ hold on
 end
 end
 
-
+dbstop
 %% ====== MODEL EN50530 MPPT ======
 nmodel=2;
 
@@ -81,10 +81,10 @@ Np = 1;
 I = [];
 V = [];
 
-Vmpp = 41.64*Ns;
-Impp = 12.97*Np;
-Vocstc = 49.60*Ns;
-Iscstc = 13.86*Np;
+Vmpp = 41.64;
+Impp = 12.97;
+Vocstc = 49.60;
+Iscstc = 13.86;
 
 KI = 0.045/100;
 KV = -0.275/100;
@@ -133,7 +133,6 @@ hold on
 
 end
 end
-
 
 
 %% ====== MODEL BELLINI ======
